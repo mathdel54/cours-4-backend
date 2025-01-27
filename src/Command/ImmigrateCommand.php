@@ -37,7 +37,7 @@ class ImmigrateCommand extends Command
         $person->setNom($nom);
         $person->setPrenom($prenom);
         $person->setAdresse($adresse);
-        
+
         $this->entityManager->persist($person);
         $this->entityManager->flush();
 
